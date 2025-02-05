@@ -1,0 +1,5 @@
+Implementar un cliente y servidor TCP para probar el envío y recepción de datos, poner a prueba el envío de ficheros grandes y detectar los posibles cuellos de botella. Probar a paralelizar el cliente para hacer muchas peticiones simultáneamente y ver qué sucede.
+Elegir primero el esquema de servidor concurrente a desarrollar (con un proceso o thread para cade petición, con un pool de los mismos, etc.), implementarlo y comprobar que funciona correctamente sin ninguna funcionalidad HTTP, simplemente devolviendo una cadena predeterminada. Así se puede probar fácilmente el rendimiento del servidor y su estabilidad ante cargas muy altas. 
+A continuación, cuando se esté seguro de que esta parte está acabada, comentar las funciones necesarias para convertirlo de nuevo en un servidor iterativo (con un solo hilo de ejecución, sin threads ni procesos). 
+Así podrás centrarte ahora en desarrollar toda la funcionalidad de recepción, parseo y respuesta de peticiones HTTP, "aislando" esta parte del resto.
+Cuando esté acabada, volver a activar la concurrencia.
